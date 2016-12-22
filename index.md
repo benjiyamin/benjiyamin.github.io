@@ -1,8 +1,6 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: default
+layout: home
 title: Engineer & Developer
-subTitle: A Porfolio of Current Projects
+subTitle: A Running Portfolio
+description: This site serves as my personal coding portfolio and blog. I can be contacted at benjiyamin@gmail.com.
 ---

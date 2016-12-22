@@ -1,0 +1,30 @@
+
+
+.intro-header {
+    padding: 0;
+}
+
+#intro-blog {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.black-overlay {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 50px 0;
+}
+
+.autocrop img {
+    position: relative;
+    margin: -0% auto; /* virtualy height needed turn don to zero */
+    width: 100%; /* height will follow within image ratio */
+    height: auto; /* to overrride attribute height set in tag */
+    vertical-align: middle;/* finalise vertical centering on baseline*/
+}
+
+.autocrop {
+    display: block;
+    max-height: 400px; /*set an height */
+    line-height: 100px; /* set the baseline at 100px from top*/
+    overflow: hidden; /* crops/cut off */
+}

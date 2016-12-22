@@ -3,15 +3,16 @@
 # ----------------------- #
 
 url: http://benjiyamin.github.io
-title: Benjamin Miller
+title: B. K. Miller
 email: benjiyamin@gmail.com
 author: Benjamin Miller
 description: > # "Write an awesome description for your new site here. 
-  Welcome to my online GitHub Portfolio. Here you'll see some of the projects
-  and skills that I'd like to share with the world. Please feel free to
-  contact  me if you'd like to get in touch or collaborate. Cheers!
+  Welcome to my online GitHub portfolio. You'll see some of the projects, skills, and ideas that I'd like to share
+  with the world. Please feel free to contact me if you'd like to get in touch or collaborate. Cheers!
 copyright: 'Copyright &copy; 2016 Ben Miller. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+credits: >
+  Credits: Landing Page is a free to use, open source Bootstrap theme created by
+  <a href="http://startbootstrap.com/">Start Bootstrap</a>.
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -20,6 +21,9 @@ credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme cr
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  - features
 
 # ----------------------- #
 #   3rd Party Settings    #

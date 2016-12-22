@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: home
 img: flood_hydrograph_16-1.png
 category: Projects
 title: PyFlo
 subTitle: Open source hydraulic simulations
-description: |
 ---
 PyFlo is an open-source library written in Python for performing hydraulic and hydrology stormwater analysis. Features include network hydraulic grade analysis and time/iteration based storage and flood routing simulations.
 

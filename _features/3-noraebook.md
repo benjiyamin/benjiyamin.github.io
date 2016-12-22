@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: home
 img: noraebook.png
 category: Projects
 title: Noraebook
 subTitle: A karaoke songbook you can take anywhere
-description: |
 ---
 Noraebook is an example of the first web application I made using Django. It is used to look up and add songs to the database.
 
