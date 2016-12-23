@@ -31,10 +31,7 @@
         <div class="container">
             <a href="{{ post.url }}">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6">
-                        <img class="img-responsive" src="/blog/assets/img/posts/{{ post.img }}" alt="">
-                    </div>
-                    <div class="col-lg-7 col-lg-offset-1 col-sm-6">
+                    <div class="col-lg-7 col-lg-offset-1 col-lg-push-4 col-sm-push-6 col-sm-6">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">
@@ -42,6 +39,9 @@
                             <br>{% if post.subTitle %}<small>{{ post.subTitle }}</small>{% endif %}
                         </h2>
                         <div class="lead">{{ post.content | strip_html | truncate:200 }}</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-pull-8 col-sm-6">
+                        <img class="img-responsive" src="/blog/assets/img/posts/{{ post.img }}" alt="">
                     </div>
                 </div>
             </a>

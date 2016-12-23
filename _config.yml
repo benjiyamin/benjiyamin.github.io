@@ -20,8 +20,8 @@ credits: >
 
 # Build settings
 permalink: pretty
-markdown: redcarpet
-redcarpet:
+markdown: kramdown
+kramdown:
   extensions: ["strikethrough"]
 
 collections:
