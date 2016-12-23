@@ -3,10 +3,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.description }}{% endif %}">
+    <meta name="description" content="{% if page.content %}{{ page.content | strip_html | truncate:155 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title | truncate:70 }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@benjiyamin">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | truncate:70 }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.content %}{{ page.content | strip_html | truncate:200 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.image %}/blog/assets/img/posts/{{ page.img }}{% else %}{{ '/assets/img/intro-bg.jpg' | url }}{% endif %}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title | truncate:70 }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:image" content="{% if page.image %}/blog/assets/img/posts/{{ page.img }}{% else %}{{ '/assets/img/intro-bg.jpg' | url }}{% endif %}" />
+    <meta property="og:description" content="{% if page.content %}{{ page.content | strip_html | truncate:200 }}{% else %}{{ site.description }}{% endif %}" />
+    <!--<meta property="og:site_name" content="{{ site.title }}" />-->
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ '/assets/css/bootstrap.min.css' | url }}" rel="stylesheet">
@@ -22,8 +37,8 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>

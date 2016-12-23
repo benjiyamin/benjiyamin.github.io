@@ -1,53 +1,52 @@
 <section>
-   <!-- Page Content -->
+    <!-- Page Content -->
     {% for post in site.posts %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
-    <div class="content-section-a">
+    <div class="content-section-a post-summary">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">
-                        {{ post.title }} <small>{{ post.date | date_to_string }}</small>
-                        <br>{% if post.subTitle %}<small>{{ post.subTitle }}</small>{% endif %}
-                    </h2>
-                    <div class="lead">{{ post.content | strip_html | truncate:240 }}</div>
+            <a href="{{ post.url }}">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">
+                            {{ post.title }} <small>{{ post.date | date_to_string }}</small>
+                            <br>{% if post.subTitle %}<small>{{ post.subTitle }}</small>{% endif %}
+                        </h2>
+                        <div class="lead">{{ post.content | strip_html | truncate:200 }}</div>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-1 col-sm-6">
+                        <img class="img-responsive" src="/blog/assets/img/posts/{{ post.img }}" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-lg-offset-1 col-sm-6">
-                   <a href="{{ post.url }}"><img class="img-responsive" src="/blog/assets/img/posts/{{ post.img }}" alt=""></a>
-                </div>
-            </div>
+            </a>
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.content-section-a -->
     {% else %}
 
-    <div class="content-section-b">
+    <div class="content-section-b post-summary">
         <div class="container">
-            <div class="row">
-                <!-- <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6"> -->
-                <div class="col-lg-7 col-lg-push-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">
-                        {{ post.title }} {% if post.subTitle %}<small>{{ post.subTitle }}</small>{% endif %}
-                        <br><small>{{ post.date | date_to_string }}</small>
-                    </h2>
-                    <div class="lead">{{ post.content | strip_html | truncate:240 }}</div>
+            <a href="{{ post.url }}">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <img class="img-responsive" src="/blog/assets/img/posts/{{ post.img }}" alt="">
+                    </div>
+                    <div class="col-lg-7 col-lg-offset-1 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">
+                            {{ post.title }} <small>{{ post.date | date_to_string }}</small>
+                            <br>{% if post.subTitle %}<small>{{ post.subTitle }}</small>{% endif %}
+                        </h2>
+                        <div class="lead">{{ post.content | strip_html | truncate:200 }}</div>
+                    </div>
                 </div>
-                <!--<div class="col-lg-5 col-sm-pull-6 col-sm-6">-->
-                <div class="col-lg-4 col-sm-pull-7 col-sm-6">
-                    <a href="{{ post.url }}"><img class="img-responsive" src="/blog/assets/img/posts/{{ post.img }}" alt=""></a>
-                </div>
-            </div>
-
+            </a>
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.content-section-b -->
     {% endif %}

@@ -28,3 +28,7 @@
     line-height: 100px; /* set the baseline at 100px from top*/
     overflow: hidden; /* crops/cut off */
 }
+
+.post-summary a {
+    color: #333
+}
