@@ -13,13 +13,13 @@
     <meta name="twitter:site" content="@benjiyamin">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | truncate:70 }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.content %}{{ page.content | strip_html | truncate:200 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image" content="{% if page.image %}/blog/assets/img/posts/{{ page.img }}{% else %}{{ '/assets/img/intro-bg.jpg' | url }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.img %}/blog/assets/img/posts/{{ page.img }}{% else %}{{ '/assets/img/intro-bg.jpg' | url }}{% endif %}">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="{% if page.title %}{{ page.title | truncate:70 }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ page.url }}" />
-    <meta property="og:image" content="{% if page.image %}/blog/assets/img/posts/{{ page.img }}{% else %}{{ '/assets/img/intro-bg.jpg' | url }}{% endif %}" />
+    <meta property="og:image" content="{% if page.img %}/blog/assets/img/posts/{{ page.img }}{% else %}{{ '/assets/img/intro-bg.jpg' | url }}{% endif %}" />
     <meta property="og:description" content="{% if page.content %}{{ page.content | strip_html | truncate:200 }}{% else %}{{ site.description }}{% endif %}" />
     <!--<meta property="og:site_name" content="{{ site.title }}" />-->
 
