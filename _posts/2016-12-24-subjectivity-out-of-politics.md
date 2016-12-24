@@ -10,20 +10,20 @@ Post-election mania is continuing and one of the biggest arguments is the state 
 push to abolish it. Watching Fox News and CNN debates on the subject usually consists of pundits agreeing or disagreeing 
 over the general premise:
 
-> If elections are purely decided by popular vote, States with higher populations have too much say over States with 
+> If elections are purely decided by popular vote, states with higher populations have too much say over states with 
 lower populations.
 
 Now, I see where the logic of this comes in. I think most people do.
 
 However, let's pretend for a second that the opposite side of the population spectrum was our current system. Let's say 
-the candidate upon winning a State got exactly 1 out of 51 votes; majority rules (can't forgot about D.C.). We would 
-most definetely all agree that would take way too much power from each individual voter!
+the candidate upon winning a state got exactly 1 out of 51 votes; majority rules (can't forgot about D.C.). We would 
+most definitely all agree that would take way too much power from each individual voter!
 
 This is one of the main reasons supporters are concluding that our Electoral College system, which is somewhere in the 
 middle of these two sides, is the best choice. 
 
 The problem with this is that there's no way to objectively create "fair" numbers that give the "correct" amount of 
-representation for either side. Depending on your view, either the States or the population hubs have too much power. 
+representation for either side. Depending on your view, either the states or the population hubs have too much power. 
 
 The numbers we have today are based off the number of senators and representatives in its U.S. Congressional delegation. 
 It's political voodoo. How do we determine that the two votes per state that we weigh in with the population-based votes 
