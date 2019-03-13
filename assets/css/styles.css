@@ -1,0 +1,194 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/white-waves.png");
+    background-color: #cccccc;
+    color: #777777;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+hr {
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+p {
+    margin-top: 20px;
+    line-height: 2.0em;
+}
+
+img {
+    margin: 0;
+}
+
+img.profile-img {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.nav-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0 0 1px 0;
+    overflow: auto;
+}
+
+.nav-content {
+    width: 960px;
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    overflow: inherit;
+    position: relative;
+
+}
+
+.nav-title {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    float: left;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 20px 40px;
+}
+
+.nav-links {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-link {
+    float: left;
+    margin-right: 20px;
+    padding: 20px 10px 20px 10px;
+}
+
+.nav-title>a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link>a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.content {
+    width: 960px;
+    max-width: 100%;
+    margin: 50px auto 50px auto;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form-input {
+    width: 100%;
+    margin: 5px 0 20px 0;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.button {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+}
+
+.cards {
+    margin-top: 20px;
+}
+
+.card-row {
+    overflow: auto;
+    clear: both;
+}
+
+.card {
+    float: left;
+    width: 280px;
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card-info {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding: 20px 0 20px 0;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    opacity: 0.95;
+}
+
+.push {
+    height: 50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer {
+    background-color: #343d46;
+    text-align: center;
+    border-style: solid;
+    border-color: #4aaaa5;
+    border-width: 5px 0 0 0;
+    height: 45px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer>p {
+    margin: 0;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+/*
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        display: block;
+    }
+}
+*/
