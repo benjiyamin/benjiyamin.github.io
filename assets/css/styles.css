@@ -183,12 +183,14 @@ img.profile-img {
     margin: 0;
 }
 
+/*
 [type=reset],
 [type=submit],
 button,
 html [type=button] {
     -webkit-appearance: button
 }
+*/
 
 /* Responsive columns - one column layout (vertical) on small screens */
 /*
