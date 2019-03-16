@@ -14,6 +14,8 @@ body {
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 hr {
@@ -35,7 +37,7 @@ img.profile-img {
     float: left;
     margin-top: 20px;
     margin-right: 20px;
-    width: 300px;
+    width: 280px;
     max-width: 100%;
 }
 
@@ -182,15 +184,6 @@ img.profile-img {
 .footer>p {
     margin: 0;
 }
-
-/*
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
-    -webkit-appearance: button
-}
-*/
 
 /* Responsive columns - one column layout (vertical) on small screens */
 /*
